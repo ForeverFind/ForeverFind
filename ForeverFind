@@ -1,44 +1,12 @@
-# ==== GIT SETUP ====
+# Create and enter project folder (change path as needed)
+mkdir ~/Desktop/foreverfind
+cd ~/Desktop/foreverfind
 
-git init
-git add .
-git commit -m "Initial commit - ForeverFind wedding vendor app"
-git remote add origin https://github.com/ForeverFind/foreverfind.git
-git branch -M main
-git push -u origin main
+# Create a new React app with Vite named 'foreverfind'
+npm create vite@latest foreverfind -- --template react
 
-#!/bin/bash
+# Enter the React app folder
+cd foreverfind
 
-GITHUB_USERNAME="ForeverFind"
-REPO_NAME="foreverfind"
-
-if [ ! -d ".git" ]; then
-  git init
-  echo "Initialized empty Git repository."
-else
-  echo "Git repository already initialized."
-fi
-
-git add .
-git commit -m "Initial commit - ForeverFind wedding vendor app"
-
-if git remote | grep origin; then
-  echo "Remote origin already exists."
-else
-  git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
-  echo "Added remote origin."
-fi
-
-git branch -M main
-git push -u origin main
-
-echo "Done! Your code is pushed to https://github.com/$GITHUB_USERNAME/$REPO_NAME"
-git remote -v
-
-mkdir src
-touch src/App.jsx
-touch src/VowAI.jsx
-
-pwd
-ls
-ls src
+# Install dependencies
+npm install
