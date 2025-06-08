@@ -34,3 +34,7 @@ git push -u origin main
 
 echo "Done! Your code is pushed to https://github.com/$GITHUB_USERNAME/$REPO_NAME"
 git remote -v
+
+mkdir src
+touch src/App.jsx
+touch src/VowAI.jsx
