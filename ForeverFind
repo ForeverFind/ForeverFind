@@ -30,3 +30,5 @@ git branch -M main
 git push -u origin main
 
 echo "Done! Your code is pushed to https://github.com/$GITHUB_USERNAME/$REPO_NAME"
+git remote -v
+
