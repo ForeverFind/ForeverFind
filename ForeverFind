@@ -64,3 +64,27 @@ const handleChatSubmit = async () => {
 
   setChatInput("");
 };
+
+# STEP 1: Initialize a Git repo (if you haven’t)
+git init
+
+# STEP 2: Add all your code
+git add .
+
+# STEP 3: Save your first commit
+git commit -m "Initial commit of VowAI wedding app"
+
+# STEP 4: Create a new repo on GitHub (you’ll do this manually in browser)
+
+# Visit https://github.com/new
+# Name it: vowai-app or foreverfind-app
+# DON'T initialize with README (you already have files)
+
+# STEP 5: Copy the repo URL GitHub gives you, e.g.
+# https://github.com/yourusername/vowai-app.git
+
+# STEP 6: Paste it here to connect your local repo
+git remote add origin https://github.com/yourusername/vowai-app.git
+
+# STEP 7: Push it to GitHub!
+git push -u origin main
