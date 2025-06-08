@@ -40,3 +40,4 @@ touch src/App.jsx
 touch src/VowAI.jsx
 
 pwd
+ls
