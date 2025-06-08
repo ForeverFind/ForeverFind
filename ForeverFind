@@ -38,3 +38,5 @@ git remote -v
 mkdir src
 touch src/App.jsx
 touch src/VowAI.jsx
+
+pwd
