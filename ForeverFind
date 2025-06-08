@@ -6,3 +6,31 @@ git commit -m "Initial commit - ForeverFind wedding vendor app"
 git remote add origin https://github.com/ForeverFind/foreverfind.git
 git branch -M main
 git push -u origin main
+
+#!/bin/bash
+
+GITHUB_USERNAME="ForeverFind"
+REPO_NAME="foreverfind"
+
+if [ ! -d ".git" ]; then
+  git init
+  echo "Initialized empty Git repository."
+else
+  echo "Git repository already initialized."
+fi
+
+git add .
+git commit -m "Initial commit - ForeverFind wedding vendor app"
+
+if git remote | grep origin; then
+  echo "Remote origin already exists."
+else
+  git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
+  echo "Added remote origin."
+fi
+
+git branch -M main
+git push -u origin main
+
+echo "Done! Your code is pushed to https://github.com/$GITHUB_USERNAME/$REPO_NAME"
+git remote -v
